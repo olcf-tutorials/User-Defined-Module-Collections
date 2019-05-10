@@ -11,8 +11,10 @@ This tutorial will cover:
 - Best practices for managing and naming collections
 
 <hr>
+
 ***Note:***
 If you're unfamiliar with using Environment Modules (or Lmod) to dynamically modify your environment, this tutorial probably isn't for you. A [basic understanding of modules](https://en.wikipedia.org/wiki/Environment_Modules_(software)) and [how they're used at the OLCF](https://www.olcf.ornl.gov/for-users/system-user-guides/summit/summit-user-guide/#shell-&-programming-environments) should be considered a prerequisite for this tutorial.
+
 <hr>
 
 ## Creating custom module collections
@@ -67,8 +69,10 @@ DefApps
 ```
 
 <hr>
+
 ***Tip:***
 When listing modules, it's often easier to read them one module per line. The `-t` / `--terse` flag does just this. Terse formatting is also much preferable for copy-paste!
+
 <hr>
 
 The system-wide default modules are a determined to be reasonable starting place, but they can be set on a per-user level, too. Let's now look at how this is achieved. 
