@@ -40,7 +40,7 @@ summit$ module save MyMods
 Saved current collection of modules to: "MyMods", for system: "summit"
 ```
 
-OLCF systems set the `$LMOD_SYSTEM_NAME` environment variable, which handles the separation of machines for you automatically. Notice that the output from `module save` above in specific to `system: "summit"`.
+OLCF systems set the `$LMOD_SYSTEM_NAME` environment variable, which handles the separation of machines for you automatically. Notice that the above output from `module save` is specific to `system: "summit"`.
 
 Similarly, when listing our saved collections, Lmod will only tell us of the collections for the current system:
 
