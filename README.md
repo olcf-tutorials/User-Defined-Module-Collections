@@ -140,6 +140,23 @@ python/3.5.2
 
 This approach is much safer (and easier) than using the `module` command in shell initialization files like `.bashrc`, `.bash_profile`, `.cshrc`, etc. 
 
+#### ...but where does the collection go?
+Lmod creates a hidden `~/.lmod.d/` directory that holds all of your saved collections.
+
+```
+summit$ ls ~/.lmod.d
+MyMods.summit  NAMD-extension2.rhea
+
+```
+
+Instead of using `ls` to inspect collections, `module savelist` first filters them by system name. 
+
+```
+summit$ module savelist
+Named collection list (For LMOD_SYSTEM_NAME = "summit"):
+  1) MyMods
+```
+
 ## Module Collection Naming
 It is not recommended to create collections with the name `default`. Lmod will use the name `default` automatically when the `module save` command is issued, and this should always refer to the modules loaded at time of login. 
 
